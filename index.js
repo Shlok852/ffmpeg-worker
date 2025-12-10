@@ -11,7 +11,8 @@ app.use(express.json());
 cloudinary.config({
   cloud_name: process.env.diiqlfwsk,
   api_key: process.env.931479174868983,
-  api_secret: process.env.mtUb5say9w-6KDgAbLjbgHr75Uo
+  api_secret: process.env.mtUb5say9w-6KDgAbLjbgHr75Uo,
+  secure: true
 });
 
 function auth(req, res, next) {
@@ -64,3 +65,4 @@ app.post("/extract-audio", auth, async (req, res) => {
 app.listen(process.env.PORT, () => {
   console.log("Worker running on port", process.env.PORT);
 });
+
