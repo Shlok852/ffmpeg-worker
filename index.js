@@ -10,9 +10,9 @@ app.use(express.json());
 
 // Use environment variable NAMES here — values live in Render environment variables
 cloudinary.config({
-  cloud_name: process.env.diiqlfwsk,
-  api_key: process.env.931479174868983,
-  api_secret: process.env.mtUb5say9w-6KDgAbLjbgHr75Uo,
+  cloud_name: "diiqlfwsk",
+  api_key: "931479174868983",
+  api_secret: "mtUb5say9w-6KDgAbLjbgHr75Uo",
   secure: true,
 });
 
@@ -87,4 +87,5 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log("Worker running on port", PORT);
 });
+
 
